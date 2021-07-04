@@ -1,0 +1,73 @@
+body{
+    background:url(https://images.unsplash.com/photo-1585517342886-1f076085742a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1934&q=80);
+    
+    display:grid;
+}
+header >h1{
+    text-align: center;
+    background: rgb(75, 116, 192);
+    padding:10px;
+    color:white;
+}
+h2, h3{
+    color:white;
+    justify-self:center;
+}
+#scoreboard{
+    width: 200px;
+    color:white;
+    border:solid 3px white;
+    margin:20px auto;
+    text-align: center;
+    font-size:35px;
+    padding:15px;
+    position: relative;
+}
+.badge{
+    color:white;
+    background-color: red;
+    font-size: 20px;
+    padding:4px;
+}
+#userbadge{
+    position: absolute;
+    top:20px;
+    left:-30px;
+}
+#compbadge{
+    position: absolute;
+    top:20px;
+    right:-30px;
+}
+#tiebadge{
+    position: absolute;
+    top: 105px;
+    right: 100px;
+}
+p{
+    font-size: 30px;
+    color: white;
+    font-family: 'Brush Script MT', cursive;
+    justify-self:center;
+}
+button{
+    background: none;
+    border: none;
+}
+
+.imgContainer {
+    justify-self:center;
+}
+
+img{
+    margin: 0px 25px 0px 25px;
+}
+
+img:hover{
+
+    transform: scale(1.1);
+    border-radius: 50%;
+    border-color: white;
+    box-shadow: 0 0 1rem white;
+      
+}

@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
     <title>Rock Paper Scissors</title>
 </head>
+<header>
+    <h1>Welcome to Rock, Paper, Scissors</h1>
+</header>
 <body>
-    <script src="js/external.js"></script> 
+    <h2>Lets Play!</h2>
+    <div id="scoreboard">
+        <div id="userbadge" class="badge">user</div>
+        <div id="compbadge" class="badge">comp</div>
+        <div id="tiebadge" class="badge">tie</div>
+        <span id="userScore">0</span>:<span id="compScore">0</span>
+        <br>
+        <span id="tieScore">0</span>
+    </div>
+    <p>Player</p>
+    <div class="imgContainer">
+        <button id="rock"><img src="https://github.com/carlynda/rpsGame/blob/master/img/rock.png?raw=true" alt="rock" value="rock"></button>
+        <button id="paper"><img src="https://github.com/carlynda/rpsGame/blob/master/img/paper.png?raw=true" alt="paper" value="paper"></button>
+        <button id="scissors"><img src="https://github.com/carlynda/rpsGame/blob/master/img/scissors.png?raw=true" alt="scissors" value="scissors"></button>
+    </div>
+    <!-- <p>Computer</p>
+    <div class="imgContainer">
+        <button><img src="img/rock.png" alt="rock" value="rock"></button>
+        <button><img src="img/paper.png" alt="paper" value="paper"></button>
+        <button><img src="img/scissors.png" alt="scissors" value="scissors"></button>   
+    </div> -->
 </body>
+    <script src="js/external2.js"></script>
 </html>

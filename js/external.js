@@ -3,7 +3,6 @@
 function computerPlay(){
     choices =['rock','paper','scissors'];
     var createComputerChoice =choices[Math.floor(Math.random()*choices.length)];
-    // console.log(createComputerChoice);
     return createComputerChoice;
 }
 
@@ -12,11 +11,13 @@ function computerPlay(){
 function userPlay(){
     var choice= prompt("Enter choice (Rock/Paper/Scissors):");
     return choice.toLowerCase();
+
 }
 
 //Create a function that takes in the user choice and computer choice and returns a string declaring the winner
 //return the winner , do not console.log unless to check results
 function playRound(playerSelection,computerSelection){
+    
     var winner;
     if (playerSelection=='rock' && computerSelection=='paper'){
         winner='computer';
@@ -46,6 +47,7 @@ function playRound(playerSelection,computerSelection){
 function game(){   
    var usercount=0;
    var computercount=0;
+   var result=playRound(userPlay(),computerPlay());
     for (var i=0;i<5;i++){
         var result=playRound(userPlay(),computerPlay());
         if (result=='user'){
@@ -72,3 +74,4 @@ function game(){
 }
 // Start the game
 game();
+
